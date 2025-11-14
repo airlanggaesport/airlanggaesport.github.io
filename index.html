@@ -4,14 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unair E-Sport</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FontAwesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <section>
-            <h1>
-                Hello World.
-            </h1>
+        <section class="navBar">
+            <div id="navBarScrolled">
+            <div class="navBarContainer">
+                <div class="navBarLogo">
+                    <div class="logoCircle"></div>
+                </div>
+                <div class="navBarJudul">
+                    UNAIR E-SPORT
+                </div>
+                <div class="navBarSpace"></div>
+                <div class="navBarMenu">
+                    <input type="checkbox" id="menuCB">
+                    <label class="menuCBZ" for="menuCB">
+                        ME <br> NU
+                    </label>
+                    <div class="menuContainer">
+                        <div class="navBarMenuSpace"></div>
+                        <div class="NBM1" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="aboutLog">info</span>
+                                </div>
+                                <div class="menuChB" id="aboutLog">About</div>
+                            </a>
+                        </div>
+                        <div class="NBM2" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="DivisionLog">groups</span>
+                                </div>
+                                <div class="menuChB" id="DivisionLog">Division</div>
+                            </a>
+                        </div>
+                        <div class="NBM3" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="WorkPLog">work</span>
+                                </div>
+                                <div class="menuChB" id="WorkPLog">Work Plan</div>
+                            </a>
+                        </div>
+                        <div class="NBM4" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="GallLog">filter</span>
+                                </div>
+                                <div class="menuChB" id="GallLog">Gallery</div>
+                            </a>
+                        </div>
+                        <div class="NBM5" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="PartnerLog">handshake</span>
+                                </div>
+                                <div class="menuChB" id="PartnerLog">Partner</div>
+                            </a>
+                        </div>
+                        <div class="NBM6" href="">
+                            <a href="">
+                                <div class="menuChA">
+                                    <span class="material-symbols-outlined" id="ContactLog">call</span>
+                                </div>
+                                <div class="menuChB" id="ContactLog">Contact</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
     </header>
+    <main id="Main">
+        <section class="imageSec">
+            <div class="mainImageBox">
+                <img id="imageBoxSlider" src="Image/image1.png" alt="">
+                <div class="arrNextPrev">
+                    <button class="prevArr" onclick="Prev()">
+                        <span class="material-symbols-outlined" id="prevArr">arrow_back_ios_new</span>
+                    </button>
+                    <button class="nextArr" onclick="Next()">
+                        <span class="material-symbols-outlined" id="nextArr">arrow_forward_ios</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="emptySpace"></div>
+        <section class="bracketSec">
+            <div class="bracketContainer">
+                <div class="bracketCA">
+                    <div class="groupATittle"></div>
+                    <div class="groupABox"></div>
+                </div>
+                <div class="bracketCB">
+                    <div class="groupBTittle"></div>
+                    <div class="groupBBox"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

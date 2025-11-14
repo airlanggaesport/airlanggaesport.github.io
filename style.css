@@ -1,0 +1,399 @@
+body {
+    font-family: 'exo';
+    height: 100rem;
+    background-color: #242124;
+    /* filter: brightness(50%); */
+}
+#Main {
+    z-index: 1;
+}
+#navBarScrolled {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 30;
+    background: none;
+    transition: background 0.4s ease-in-out;
+}
+#navBarScrolled.scrolled {
+    background: #333333;
+}
+.navBarContainer {
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 99%;
+
+    display: grid;
+    grid-template-areas: 
+    "logoNB judulNB spaceNB menuNB";
+    grid-template-columns: 
+    [logoNB] 1fr [judulNB] 6fr [spaceNB] 7.8fr [menuNB] 0.85fr;
+}
+.navBarLogo {
+    grid-area: logoNB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoCircle {
+    border: 0px solid black;
+    width: 70%;
+    height: 80%;
+    border-radius: 100%;;
+    background-image: url(Image/LOGO\ UNAIR\ ESPORT.png);
+    background-size: contain;
+    background-position: center;
+}
+.navBarJudul {
+    grid-area: judulNB;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+.navBarSpace {
+    grid-area: spaceNB;
+}
+.navBarMenu {
+    border: 0px solid black;
+    grid-area: menuNB;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    z-index: 40;
+}
+.navBarMenu input {
+    display: none;
+}
+.menuCBZ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+
+    border: 0px solid black;
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    z-index: 100;
+    cursor: pointer;
+}
+.menuCBZ:hover {
+    color: cyan;
+}
+
+.menuContainer {
+    display: grid;
+    grid-template-areas: 
+    "menuSpace"
+    "menuAbout"
+    "menuDivision"
+    "menuWorkP"
+    "menuGallery"
+    "menuPartner"
+    "menuContact";
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+    [menuSpace] 1.2fr
+    repeat(6, 1fr);
+    position: fixed;
+
+    width: 0rem;
+    height: 70%;
+    border: 0px solid black;
+    box-sizing: border-box;
+    opacity: 0%;
+    overflow: hidden;
+    background: linear-gradient(135deg, #232323  60%, #252525 100%);
+
+    right: 0%;
+    top: 0%;
+    transition: width 0.5s ease-in-out;
+}
+input#menuCB:checked ~ .menuContainer {
+    opacity: 100%;
+    width: 20rem;
+}
+
+.mainImageBox {
+    border: 0px solid black;
+    width: 100%;
+    height: 45rem;
+}
+.mainImageBox img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.NBM1 {
+    grid-area: menuAbout;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM1 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM1 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM1 a:hover #aboutLog{
+    color: cyan;
+}
+.NBM2 {
+    grid-area: menuDivision;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM2 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM2 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM2 a:hover #DivisionLog{
+    color: cyan;
+}
+.NBM3 {
+    grid-area: menuWorkP;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM3 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM3 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM3 a:hover #WorkPLog{
+    color: cyan;
+}
+.NBM4 {
+    grid-area: menuGallery;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM4 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM4 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM4 a:hover #GallLog{
+    color: cyan;
+}
+.NBM5 {
+    grid-area: menuPartner;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM5 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM5 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM5 a:hover #PartnerLog{
+    color: cyan;
+}
+.NBM6 {
+    grid-area: menuContact;
+    border: 0px solid white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NBM6 a {
+    border: 0px solid white;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 93%;
+    height: 85%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    text-decoration: none;
+}
+.NBM6 a:hover {
+    background: rgba(173, 216, 230, 0.4);
+}
+.NBM6 a:hover #ContactLog{
+    color: cyan;
+}
+
+.menuChA {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+}
+.menuChB {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, span#ContactLog {
+    font-size: 28px;
+}
+
+.darkEffect {
+    filter: brightness(60%);
+}
+
+.arrNextPrev {
+    border: 0px solid black;
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 20;
+    top: 35%;
+}
+.prevArr, .nextArr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 3%;
+
+    color: whitesmoke;
+    background-color: #252525;
+    opacity: 50%;
+    cursor: pointer;
+}
+.emptySpace {
+    border: 1px solid white;
+    width: 100%;
+    height: 12rem;
+    box-sizing: border-box;
+}
