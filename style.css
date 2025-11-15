@@ -1,6 +1,6 @@
 body {
     font-family: 'exo';
-    height: 100rem;
+    height: 150rem;
     background-color: #242124;
     /* filter: brightness(50%); */
 }
@@ -392,8 +392,496 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     cursor: pointer;
 }
 .emptySpace {
-    border: 1px solid white;
+    border: 0px solid white;
     width: 100%;
     height: 12rem;
     box-sizing: border-box;
+}
+
+.bracketSec {
+    width: 100%;
+    height: 85rem;
+    border: 0px solid white;
+    box-sizing: border-box;
+}
+.bracketTittle {
+    border: 0px solid white;
+    width: 100%;
+    height: 3.5rem;
+    box-sizing: border-box;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: whitesmoke;
+}
+.bracketContainer {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 75rem;
+
+    display: grid;
+    grid-template-areas: 
+    "TittleBoxA"
+    "TableBoxA"
+    "GappBoxAB"
+    "TittleBoxB"
+    "TableBoxB"
+    "GappBoxBC"
+    "TittleBoxC"
+    "TableBoxC";
+    grid-template-columns: 1fr;
+    grid-template-rows: 
+    [TittleBoxA] 1fr
+    [TableBoxA] 7fr
+    [GappBoxAB] 0.75fr
+    [TittleBoxB] 1fr
+    [TableBoxB] 7fr
+    [GappBoxBC] 0.75fr
+    [TittleBoxC] 1fr
+    [TableBoxC] 7fr;
+}
+.groupATittle {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: TittleBoxA;
+}
+.groupATittle h2 {
+    border: 0px solid red;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+    font-size: 20px;
+}
+.groupABox {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    grid-area: TableBoxA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bracketBoxA {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 85%;
+    height: 100%;
+
+    display: grid;
+    grid-template-areas: 
+    "numberA teamA matchPA matchWA netGameA gameWA";
+    grid-template-columns: 
+    [numberA teamA matchPA matchWA netGameA gameWA] 0.5fr 2.5fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 
+    1fr
+    repeat(5, 1.5fr);
+}
+.numberAH, .numberA1, .numberA2, .numberA3, .numberA4, .numberA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamAH, .teamA1, .teamA2, .teamA3, .teamA4, .teamA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.matchPoAH, .matchPoA1, .matchPoA2, .matchPoA3, .matchPoA4, .matchPoA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchWLAH, .matchWLA1, .matchWLA2, .matchWLA3, .matchWLA4, .matchWLA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netGameAH, .netGameA1, .netGameA2, .netGameA3, .netGameA4, .netGameA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameWLAH, .gameWLA1, .gameWLA2, .gameWLA3, .gameWLA4, .gameWLA5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupBoxGapAB {
+    grid-area: GappBoxAB;
+}
+.groupBTittle {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: TittleBoxB;
+}
+.groupBTittle h2 {
+    border: 0px solid red;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+    font-size: 20px;
+}
+.groupBBox {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    grid-area: TableBoxB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bracketBoxB {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 85%;
+    height: 100%;
+
+    display: grid;
+    grid-template-areas: 
+    "numberB teamB matchPB matchWB netGameB gameWB";
+    grid-template-columns: 
+    [numberB teamB matchPB matchWB netGameB gameWB] 0.5fr 2.5fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 
+    1fr
+    repeat(5, 1.5fr);
+}
+.numberBH, .numberB1, .numberB2, .numberB3, .numberB4, .numberB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBH, .teamB1, .teamB2, .teamB3, .teamB4, .teamB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.matchPoBH, .matchPoB1, .matchPoB2, .matchPoB3, .matchPoB4, .matchPoB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchWLBH, .matchWLB1, .matchWLB2, .matchWLB3, .matchWLB4, .matchWLB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netGameBH, .netGameB1, .netGameB2, .netGameB3, .netGameB4, .netGameB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameWLBH, .gameWLB1, .gameWLB2, .gameWLB3, .gameWLB4, .gameWLB5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.groupBoxGapBC {
+    grid-area: GappBoxBC;
+}
+.groupCTittle {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: TittleBoxC;
+}
+.groupCTittle h2 {
+    border: 0px solid red;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+    font-size: 20px;
+}
+.groupCBox {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    grid-area: TableBoxC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bracketBoxC {
+    border: 0px solid white;
+    box-sizing: border-box;
+    width: 85%;
+    height: 100%;
+
+    display: grid;
+    grid-template-areas: 
+    "numberC teamC matchPC matchWC netGameC gameWC";
+    grid-template-columns: 
+    [numberC teamC matchPC matchWC netGameC gameWC] 0.5fr 2.5fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 
+    1fr
+    repeat(5, 1.5fr);
+}
+.numberCH, .numberC1, .numberC2, .numberC3, .numberC4, .numberC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamCH, .teamC1, .teamC2, .teamC3, .teamC4, .teamC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.matchPoCH, .matchPoC1, .matchPoC2, .matchPoC3, .matchPoC4, .matchPoC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.matchWLCH, .matchWLC1, .matchWLC2, .matchWLC3, .matchWLC4, .matchWLC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netGameCH, .netGameC1, .netGameC2, .netGameC3, .netGameC4, .netGameC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameWLCH, .gameWLC1, .gameWLC2, .gameWLC3, .gameWLC4, .gameWLC5 {
+    border-bottom: 1px solid #242124;
+    background-color: whitesmoke;
+    color: #252525;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.numberAH, .teamAH, .matchPoAH, .matchWLAH, .netGameAH, .gameWLAH {
+    background-color: yellowgreen;
+    color: #252525;
+}
+.numberBH, .teamBH, .matchPoBH, .matchWLBH, .netGameBH, .gameWLBH {
+    background-color: yellowgreen;
+    color: #252525;
+}
+.numberCH, .teamCH, .matchPoCH, .matchWLCH, .netGameCH, .gameWLCH {
+    background-color: yellowgreen;
+    color: #252525;
+}
+.teamAH, .teamBH, .teamCH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgTeam {
+    border: 1px solid #242124;
+    box-sizing: border-box;
+    display: block;
+    width: 18%;
+    height: 95%;
+}
+
+.DivisionSec {
+    width: 100%;
+    height: 30rem;
+    border: 0px solid white;
+    box-sizing: border-box;
+}
+.divisionTittle {
+    border: 0px solid white;
+    width: 100%;
+    height: 3.5rem;
+    box-sizing: border-box;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: whitesmoke;
+}
+.divisionCardDlider {
+    border: 0px solid white;
+    width: 100%;
+    height: 22.5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 1.5%;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    cursor: grab;
+}
+.divisionCardDlider::-webkit-scrollbar {
+    display: none;
+}
+.divisionCard {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 19%;
+    height: 94%;
+    min-width: 19%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1%;
+    background-color: #292930;
+    box-shadow: 0 4px 22px #0005;
+}
+.divisionCard img {
+    width: 90%;
+    height: 80%;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.moreButtonDivision {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 90%;
+    height: 12%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #ff914d;
+    color: #23262e ;
+}
+.moreButtonDivision:hover {
+    background-color: #ffb380;
 }
