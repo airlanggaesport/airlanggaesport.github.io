@@ -413,10 +413,11 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     margin-top: 0%;
     margin-bottom: 0%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-left: 3%;
 
     font-size: 40px;
+    font-weight: 700;
     color: whitesmoke;
 }
 .bracketContainer {
@@ -496,6 +497,8 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     grid-template-rows: 
     1fr
     repeat(5, 1.5fr);
+
+    box-shadow: 0 4px 22px #0005;
 }
 .numberAH, .numberA1, .numberA2, .numberA3, .numberA4, .numberA5 {
     border-bottom: 1px solid #242124;
@@ -604,6 +607,8 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     grid-template-rows: 
     1fr
     repeat(5, 1.5fr);
+
+    box-shadow: 0 4px 22px #0005;
 }
 .numberBH, .numberB1, .numberB2, .numberB3, .numberB4, .numberB5 {
     border-bottom: 1px solid #242124;
@@ -712,6 +717,8 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     grid-template-rows: 
     1fr
     repeat(5, 1.5fr);
+
+    box-shadow: 0 4px 22px #0005;
 }
 .numberCH, .numberC1, .numberC2, .numberC3, .numberC4, .numberC5 {
     border-bottom: 1px solid #242124;
@@ -774,15 +781,15 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     align-items: center;
 }
 .numberAH, .teamAH, .matchPoAH, .matchWLAH, .netGameAH, .gameWLAH {
-    background-color: yellowgreen;
+    background-color: #ff914d;
     color: #252525;
 }
 .numberBH, .teamBH, .matchPoBH, .matchWLBH, .netGameBH, .gameWLBH {
-    background-color: yellowgreen;
+    background-color: #ff914d;
     color: #252525;
 }
 .numberCH, .teamCH, .matchPoCH, .matchWLCH, .netGameCH, .gameWLCH {
-    background-color: yellowgreen;
+    background-color: #ff914d;
     color: #252525;
 }
 .teamAH, .teamBH, .teamCH {
@@ -800,7 +807,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 
 .DivisionSec {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     border: 0px solid white;
     box-sizing: border-box;
 }
@@ -811,12 +818,14 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     box-sizing: border-box;
 
     margin-top: 0%;
+    margin-left: 3%;
     margin-bottom: 0%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     font-size: 40px;
+    font-weight: 700;
     color: whitesmoke;
 }
 .divisionCardDlider {
@@ -835,13 +844,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     padding-right: 2%;
     gap: 1.5%;
 
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
     cursor: grab;
-}
-.divisionCardDlider::-webkit-scrollbar {
-    display: none;
 }
 .divisionCard {
     border: 0px solid whitesmoke;
@@ -884,4 +887,178 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .moreButtonDivision:hover {
     background-color: #ffb380;
+}
+
+.PartnershipSec {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 35rem;
+}
+.partnershipContainer {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30rem;
+}
+.partnershipTittle {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    align-items: center;
+}
+.partnershipTittle h2 {
+    border: 0px solid red;
+    box-sizing: border-box;
+    width: auto;
+    height: 100%;
+    margin-left: 3%;
+
+    font-size: 40px;
+    font-weight: 700;
+    color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partnershipLogoBox {
+    border: 0px solid cyan;
+    box-sizing: border-box;
+    width: 85%;
+    height: 75%;
+    margin-left: 3%;
+
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: repeat(3, 1.2fr);
+    row-gap: 7%;
+    column-gap: 1.2%;
+}
+.partnerLogoIMG {
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    background-image: url(Image/ComingSoon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footerSec {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30rem;
+}
+.footerContainer {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(Image/FooterImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-areas: 
+    "blankSpace blankSpace blankSpace"
+    "footLogoArea footerunknownArea footerContactArea"
+    "moreWordSpace1 moreWordSpace2 moreWordSpace3";
+    grid-template-columns: 
+    [footLogoArea footerContactArea footerunknownArea] 1.5fr 2fr 1fr;
+    grid-template-rows: 
+    1fr 3fr 0.5fr;
+}
+.footerBox1 {
+    grid-area: blankSpace;
+}
+.footerBox2 {
+    grid-area: footLogoArea;
+}
+.footerBox3 {
+    grid-area: footerunknownArea;
+}
+.footerBox4 {
+    grid-area: footerContactArea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+.footerBox5 {
+    grid-area: moreWordSpace1;
+}
+.footerBox6 {
+    grid-area: moreWordSpace2;
+}
+.linkcontainerfooter {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 5%;
+    
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+}
+.linkcontainerfooter a {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    text-decoration: none;
+    color: whitesmoke;
+}
+.linkcontainerfooter a:hover {
+    color: cyan;
+}
+#footerLogo {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 10%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+.linkFooterName {
+    border: 0px solid whitesmoke;
+    box-sizing: border-box;
+    width: 90%;
+    height: 95%;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 4%;
+
+    font-weight: 700;
+}
+.footerBox7 {
+    grid-area: moreWordSpace3;
+
+    display: flex;
+    justify-content: end;
+    padding-right: 4%;
+}
+.copyright {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 12px;
 }
