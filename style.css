@@ -22,7 +22,7 @@ body {
     transition: background 0.4s ease-in-out;
 }
 #navBarScrolled.scrolled {
-    background: #020625;
+    background: #a8c4d4;
 }
 .navBarContainer {
     border: 0px solid black;
@@ -508,7 +508,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .numberAH, .numberA1, .numberA2, .numberA3, .numberA4, .numberA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -517,7 +517,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .teamAH, .teamA1, .teamA2, .teamA3, .teamA4, .teamA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -526,7 +526,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchPoAH, .matchPoA1, .matchPoA2, .matchPoA3, .matchPoA4, .matchPoA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -535,7 +535,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchWLAH, .matchWLA1, .matchWLA2, .matchWLA3, .matchWLA4, .matchWLA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -544,7 +544,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .netGameAH, .netGameA1, .netGameA2, .netGameA3, .netGameA4, .netGameA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -553,7 +553,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .gameWLAH, .gameWLA1, .gameWLA2, .gameWLA3, .gameWLA4, .gameWLA5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -618,7 +618,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .numberBH, .numberB1, .numberB2, .numberB3, .numberB4, .numberB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -627,7 +627,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .teamBH, .teamB1, .teamB2, .teamB3, .teamB4, .teamB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -636,7 +636,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchPoBH, .matchPoB1, .matchPoB2, .matchPoB3, .matchPoB4, .matchPoB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -645,7 +645,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchWLBH, .matchWLB1, .matchWLB2, .matchWLB3, .matchWLB4, .matchWLB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -654,7 +654,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .netGameBH, .netGameB1, .netGameB2, .netGameB3, .netGameB4, .netGameB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -663,7 +663,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .gameWLBH, .gameWLB1, .gameWLB2, .gameWLB3, .gameWLB4, .gameWLB5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     box-sizing: border-box;
 
     display: flex;
@@ -728,7 +728,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .numberCH, .numberC1, .numberC2, .numberC3, .numberC4, .numberC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -738,7 +738,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .teamCH, .teamC1, .teamC2, .teamC3, .teamC4, .teamC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -748,7 +748,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchPoCH, .matchPoC1, .matchPoC2, .matchPoC3, .matchPoC4, .matchPoC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -758,7 +758,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .matchWLCH, .matchWLC1, .matchWLC2, .matchWLC3, .matchWLC4, .matchWLC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -768,7 +768,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .netGameCH, .netGameC1, .netGameC2, .netGameC3, .netGameC4, .netGameC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -778,7 +778,7 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
 }
 .gameWLCH, .gameWLC1, .gameWLC2, .gameWLC3, .gameWLC4, .gameWLC5 {
     border-bottom: 1px solid #242124;
-    background-color: whitesmoke;
+    background-color: #CEE5F2;
     color: #252525;
     box-sizing: border-box;
 
@@ -787,15 +787,15 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     align-items: center;
 }
 .numberAH, .teamAH, .matchPoAH, .matchWLAH, .netGameAH, .gameWLAH {
-    background-color: #A3D8F4;
+    background-color: #4381C1;
     color: #252525;
 }
 .numberBH, .teamBH, .matchPoBH, .matchWLBH, .netGameBH, .gameWLBH {
-    background-color: #A3D8F4;
+    background-color: #4381C1;
     color: #252525;
 }
 .numberCH, .teamCH, .matchPoCH, .matchWLCH, .netGameCH, .gameWLCH {
-    background-color: #A3D8F4;
+    background-color: #4381C1;
     color: #252525;
 }
 .teamAH, .teamBH, .teamCH {
