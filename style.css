@@ -1,7 +1,11 @@
 body {
     font-family: 'exo';
-    height: 150rem;
-    background-color: #242124;
+    width: 100%;
+    height: 247rem;
+
+    /* max-width: 100%; */
+    /* overflow-x: hidden; */
+    background-color: #000d16;
     /* filter: brightness(50%); */
 }
 #Main {
@@ -18,7 +22,7 @@ body {
     transition: background 0.4s ease-in-out;
 }
 #navBarScrolled.scrolled {
-    background: #333333;
+    background: #020625;
 }
 .navBarContainer {
     border: 0px solid black;
@@ -57,6 +61,8 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     color: whitesmoke;
+
+    text-decoration: none;
 }
 .navBarSpace {
     grid-area: spaceNB;
@@ -133,7 +139,7 @@ input#menuCB:checked ~ .menuContainer {
 }
 
 .mainImageBox {
-    border: 0px solid black;
+    border: 0px solid whitesmoke;
     width: 100%;
     height: 45rem;
 }
@@ -781,15 +787,15 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     align-items: center;
 }
 .numberAH, .teamAH, .matchPoAH, .matchWLAH, .netGameAH, .gameWLAH {
-    background-color: #ff914d;
+    background-color: #A3D8F4;
     color: #252525;
 }
 .numberBH, .teamBH, .matchPoBH, .matchWLBH, .netGameBH, .gameWLBH {
-    background-color: #ff914d;
+    background-color: #A3D8F4;
     color: #252525;
 }
 .numberCH, .teamCH, .matchPoCH, .matchWLCH, .netGameCH, .gameWLCH {
-    background-color: #ff914d;
+    background-color: #A3D8F4;
     color: #252525;
 }
 .teamAH, .teamBH, .teamCH {
@@ -834,34 +840,52 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     height: 22.5rem;
     box-sizing: border-box;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    overflow-x: auto;
+    overflow: hidden;
+    /* overflow-x: auto;
     overflow-y: hidden;
-    scroll-behavior: smooth;
-    padding-left: 2%;
-    padding-right: 2%;
+    scroll-behavior: smooth; */
     gap: 1.5%;
+    position: absolute;
 
-    cursor: grab;
+    /* cursor: grab; */
+}
+.innerdivisionCardDlider {
+    border: 0px solid white;
+    width: 172rem;
+    height: 22.5rem;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    /* overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth; */
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    gap: 0.5%;
+    position: absolute;
+
+    /* cursor: grab; */
 }
 .divisionCard {
     border: 0px solid whitesmoke;
     box-sizing: border-box;
     border-radius: 30px;
-    width: 19%;
-    height: 94%;
+    width: 100%;
+    height: 100%;
     min-width: 19%;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 1%;
-    background-color: #292930;
-    box-shadow: 0 4px 22px #0005;
+    padding-top: 5%;
+    background-color: #222831;
+    box-shadow: 0 8px 24px rgba(52, 115, 97, 0.10);
 }
-.divisionCard img {
+.imgDivCard {
     width: 90%;
     height: 80%;
     border: 1px solid whitesmoke;
@@ -882,11 +906,12 @@ span#aboutLog, span#DivisionLog, span#WorkPLog, span#GallLog, span#PartnerLog, s
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    background-color: #ff914d;
-    color: #23262e ;
+    background-color: #347361;
+    color: #fff;
+    transition: background-color 0.3s;
 }
 .moreButtonDivision:hover {
-    background-color: #ffb380;
+    background-color: #4EB592;
 }
 
 .PartnershipSec {
